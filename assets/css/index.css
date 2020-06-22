@@ -110,3 +110,21 @@
   margin: auto;
 }
 
+
+
+/* ***************************      MEDIA      *************************** */
+
+@media(max-width:540px) {
+  .home-form {
+    width: 95%;
+    margin: auto;
+  }
+
+  .footer-info  {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+
+}
