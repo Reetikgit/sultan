@@ -38,8 +38,11 @@ h1, h2, h3, h4, h5, h6 {
 #preloader:before {
   content: "";
   position: fixed;
-  top: calc(50% - 30px);
-  left: calc(50% - 30px);
+  text-align: center;
+  top: 45%;
+  left: 45%;
+  /* top: calc(50% - 30px);
+  left: calc(50% - 30px); */
   border: 6px solid #1a1814;
   border-top-color: #cda45e;
   border-bottom-color: #cda45e;
@@ -931,7 +934,10 @@ section {
   font-size: 16px;
   font-weight: 500;
   line-height: 1;
-  color: #fff;
+  /* color: #fff; */
+  color: #0c0b09;
+  font-weight: bolder;
+  font-size: larger;
   margin-bottom: 10px;
   transition: all ease-in-out 0.3s;
   border-radius: 50px;
