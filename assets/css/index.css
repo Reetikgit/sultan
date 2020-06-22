@@ -114,7 +114,11 @@
 
 /* ***************************      MEDIA      *************************** */
 
-@media(max-width:540px) {
+@media only screen and (max-width: 539px) {
+  body {
+    background-color: white;
+  }
+
   .home-form {
     width: 95%;
     margin: auto;
