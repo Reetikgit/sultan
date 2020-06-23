@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  background-color: white;
 }
 
 .nav-logo {
@@ -146,7 +147,7 @@ body {
 
 .products-grid {
   width: 100%;
-  margin: auto;
+  /* margin: auto; */
   display: flex;
   flex-wrap: wrap;
 }
@@ -174,7 +175,7 @@ body {
 
 .product-card {
   border-radius: 10px;
-  border: 2px solid #cda45e;
+  border: .1px dotted #cda45e;
   margin: 1% 1% 1% 1%;
 }
 
@@ -202,6 +203,11 @@ body {
   border: 2px solid #cda45e;
   border-radius: 10px;
   margin-top: 1%;
+  /* visibility: hidden; */
+}
+
+.showFilter {
+  visibility: hidden;
 }
 
 .cbox {
@@ -278,6 +284,7 @@ body {
 }
 
 
+
 /* ***************************      MEDIA       *************************** */
 @media(min-width: 540px) {
   .cat {
@@ -288,7 +295,7 @@ body {
 
 @media only screen and (max-width: 539px) {
   body {
-    /* background-color: white; */
+    background-color: white;
   }
 
   .home-form {
@@ -304,8 +311,12 @@ body {
   }
 
   .product-card {
-    border-radius: 10px;
-    border: 2px solid #cda45e;
+    border-radius: 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #cda45e;
     margin: 2% 5% 2% 5%;
   }
 
@@ -323,6 +334,13 @@ body {
   
   .products-grid {
     padding-top: 8%;
+    
+  }
+
+  .collapsible {
+    position: fixed;
+    bottom: 0;
+    z-index: 900;
   }
 
 
