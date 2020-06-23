@@ -288,7 +288,7 @@ body {
 
 @media only screen and (max-width: 539px) {
   body {
-    background-color: white;
+    /* background-color: white; */
   }
 
   .home-form {
