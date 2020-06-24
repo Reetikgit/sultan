@@ -5,3 +5,6 @@ document.querySelector('.collapsible').addEventListener('click', function(e) {
   document.querySelector('.showFilter').classList.toggle('showFilter');
 
 })
+
+
+// ///////////////     PRODUCT            ///////////////////////////////////////////////
