@@ -5,6 +5,70 @@ body {
   background-color: white;
 }
 
+.dropdown{
+  display: flex;
+  flex-direction: row;
+}
+.pos{
+  margin: 4px;
+}
+@media only screen and (max-width: 570px) {
+  .dropdown-content{
+    display: none;
+    left:0%;
+
+  }
+  .pos{
+    padding-top: 10px;
+
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+
+  }
+
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+
+}
+
+@media only screen and (min-width: 570px) {
+
+  .dropdown-content {
+
+    display: none;
+    position: absolute;
+    background-color:#0c0b09;
+    min-width: 180px;
+    box-shadow: 0px 1px 1px 0px #0c0b09;
+    top:25px;
+    left:0%;
+    z-index: 1;
+
+
+  }
+
+  .dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown{
+    display: flex;
+    flex-direction: row;
+  }
+  .pos{
+    margin: 4px;
+  }
+  .dropdown-content a:hover {background-color: #ddd;}
+
+  .dropdown:hover .dropdown-content {display: block;}
+
+  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+}
+
 .nav-logo {
   border-radius: 5px;
   padding-right: 2%;
@@ -137,7 +201,30 @@ body {
   height: 100%;
   object-fit: cover;
 }
+@media only screen and (max-width: 570px) {
+  .slider-container {
+    height: 300px;
+    width: 100%;
 
+
+  }
+  .slider-pic-holder {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+  }
+  .slider-pic {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+  }
+  .owl-carousel .owl-item img {
+
+      width: 100%;
+      object-fit: contain;
+
+  }
+}
 /* products */
 
 .product-heading {
@@ -331,10 +418,10 @@ body {
     margin: auto;
     /* margin-bottom: 20%; */
   }
-  
+
   .products-grid {
     padding-top: 8%;
-    
+
   }
 
   .collapsible {
