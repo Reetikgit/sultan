@@ -333,7 +333,7 @@ body {
     color: black;
     font-size: 0.8em;
     border:1px solid white;
-    margin-left:
+    /* margin-left: */
   }
   .collapsible2{
 
@@ -383,8 +383,6 @@ body {
   margin: 0;
 }
 
-
-
 /* ****************************     PRODUCT     ******************************* */
 
 .whole-product {
@@ -425,6 +423,37 @@ body {
 }
 
 
+
+/* ******  other details   ****** */
+
+.other-details-section {
+  padding-top: 0;
+}
+
+.other-details {
+  color: black;
+  width: 70%;
+  margin: auto;
+}
+
+.detail {
+  margin-bottom: 5%;
+  border: 1px solid #cda45e;
+  border-radius: 5px;
+}
+
+.detail-question {
+  display: flex;
+  color: #cda45e;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 2%;
+  border-bottom: 1px dotted #cda45e;
+}
+
+.detail-answer {
+  padding: 2% 2%;
+}
 
 /* ***************************      MEDIA       *************************** */
 @media(min-width: 540px) {
@@ -478,7 +507,31 @@ body {
 
   }
 
+  .collapsible {
+    position: fixed;
+    bottom: 0;
+    z-index: 900;
+  }
 
+  /* ******************    PRODUCT         ************************* */
+
+  .whole-product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other-details {
+    width: 98%;
+  }
+
+  .detail-question {
+    display: flex;
+    color: #cda45e;
+    font-size: large;
+    font-weight: bold;
+    padding: 2%;
+    border-bottom: 1px dotted #cda45e;
+  }
 
 
 }
