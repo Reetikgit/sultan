@@ -30,7 +30,7 @@
 <body>
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
-    <h1 class="logo mr-auto"><a href="#"><img class="nav-logo" src="../assets/img/home/logo.png"></a></h1>
+    <h1 class="logo mr-auto"><a href="#"><img class="nav-logo" src="../assets/img/home/nav-logo.png"></a></h1>
     <nav class="nav-menu d-none d-lg-block">
       <ul>
         <li ><a href="../home/index.html">Home</a></li>
@@ -47,15 +47,18 @@
   </div>
 </header>
 <main>
-<br><br><br><br>
+<br><br><br><br><br><br>
+<div class="section-title product-title-section">
+  <p>Product name</p>
+</div>
 
-<section>
-  <div class=" whole-product">
-    <div class="product-images">
-      <div class="main-img-holder">
+<section class="row whole-product-section">
+  <div class="whole-product col-lg-12 col-md-12 col-sm-12">
+    <div class="product-images col-lg-6 col-md-6 col-sm-12">
+      <div class="main-img-holder col-lg-10 col-md-10 col-sm-11">
         <img class="main-img" src="../assets/img/kurtas/kurta1.jpeg" alt="">
       </div>
-      <div class="sub-imgs">
+      <div class="sub-imgs col-lg-10 col-md-10 col-sm-11">
         <div class="sub-img-holder">
           <img class="sub-img" src="../assets/img/kurtas/kurta2.jpg" alt="">
         </div>
@@ -65,39 +68,86 @@
         <div class="sub-img-holder">
           <img class="sub-img" src="../assets/img/kurtas/kurta3.jpg" alt="">
         </div>
+        <div class="sub-img-holder">
+          <img class="sub-img" src="../assets/img/kurtas/kurta1.jpeg" alt="">
+        </div>
+        
       </div>
     </div>
-    <div class="product-describtion">
-      dhjknbvcdfghjkjh
+    <div class="product-description col-lg-5 col-md-5 col-sm-10">
+      <div class="prod-short-desc-div">
+       <div class="prod-short-desc">
+         <h3>Product Descriptison </h3>
+        </div>
+       <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, molestiae fugiat. Libero quaerat earum officia. Perferendis non autem ab quo delectus nisi, deserunt eaque optio et. Nobis totam deserunt culpa.</div>
+      </div>
+      <div class="prod-checkout-div">
+        <div class="make-it-yours">
+          <h4>Make it yours.</h4>
+        </div>
+        <div>
+          <p class="">Choose your size</p> 
+          <div class="row prod-sizes">
+            <div class="radio col-lg-5 col-md-5 col-sm-5">
+              <label><input type="radio" name="size" checked>xl</label>
+            </div>
+            <div class="radio col-lg-5 col-md-5 col-sm-5">
+              <label><input type="radio" name="size">l</label>
+            </div>
+            <div class="radio col-lg-5 col-md-5 col-sm-5">
+              <label><input type="radio" name="size" >m</label>
+            </div>
+            <div class="radio col-lg-5 col-md-5 col-sm-5">
+              <label><input type="radio" name="size" checked>xl</label>
+            </div>
+            <div class="radio col-lg-5 col-md-5 col-sm-5">
+              <label><input type="radio" name="size">l</label>
+            </div>
+            <div class="radio col-lg-5 col-md-5 col-sm-5">
+              <label><input type="radio" name="size" >m</label>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod-quantity">
+          <label for="pquantity">No of units</label>
+          <input type="number" min="1" max="100" id="pquantity">
+        </div>
+
+        <div class="prod-buttons">
+          <div class="btns checkout-btn">
+            <a href="#" class="btn-menu animated fadeInUp scrollto">Checkout this Product</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-</main><!-- End #main -->
+</main>
+<!-- End #main -->
 
 <!-- ======= Footer ======= -->
 <footer id="footer">
   <div class="footer-top">
     <div class="container">
       <div class="row">
-        <!-- <div class="col-lg-12 col-md-12 col-sm-12"> -->
-          <div class="footer-info ">
-            <h3 class="footer-item col-lg-3 col-md-3 col-sm-10 ">SULTAN</h3>
-            <p class="footer-item address col-lg-3 col-md-3 col-sm-10">
-              2,HartFord Lane<br>
-              Kolkata - 700016
-            </p>
-            <p class="footer-item col-lg-3 col-md-3 col-sm-10">
-              <strong>Phone:</strong> +91 9748 776 735<br>
-              <strong>Email:</strong> sultankurta@hotmail.com<br>
-            </p>
-            <div class="social-links footer-item col-lg-4 col-md-3 col-sm-10">
-              <a href="https://m.facebook.com/sultankurta/?tsid=0.23947037691916373&source=result" class="facebook"><i class="bx bxl-facebook"></i></a>
-              <a href="https://www.instagram.com/sultankurta/" class="instagram"><i class="bx bxl-instagram"></i></a>
-            </div>
+        <div class="footer-info ">
+          <h3 class="footer-item col-lg-3 col-md-3 col-sm-10 ">SULTAN</h3>
+          <p class="footer-item address col-lg-3 col-md-3 col-sm-10">
+            2,HartFord Lane<br>
+            Kolkata - 700016
+          </p>
+          <p class="footer-item col-lg-3 col-md-3 col-sm-10">
+            <strong>Phone:</strong> +91 9748 776 735<br>
+            <strong>Email:</strong> sultankurta@hotmail.com<br>
+          </p>
+          <div class="social-links footer-item col-lg-4 col-md-3 col-sm-10">
+            <a href="https://m.facebook.com/sultankurta/?tsid=0.23947037691916373&source=result" class="facebook"><i class="bx bxl-facebook"></i></a>
+            <a href="https://www.instagram.com/sultankurta/" class="instagram"><i class="bx bxl-instagram"></i></a>
           </div>
-        <!-- </div> -->
+        </div>
       </div>
       <div class="copyright">
         &copy; Copyright <strong><span>SULTAN</span></strong>. All Rights Reserved
@@ -125,7 +175,7 @@
 
 <!-- Template Main JS File -->
 <script src="../assets/js/main.js"></script>
-
+<!-- <script src="../assets/js/index.js"></script> -->
 </body>
 
 </html>
