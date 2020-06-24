@@ -333,7 +333,6 @@ body {
     color: black;
     font-size: 1.4em;
     border:1px solid white;
-    margin-left:
   }
   .collapsible2{
 
@@ -479,6 +478,12 @@ body {
   }
 
 
-
-
+  .detail-question {
+    display: flex;
+    color: #cda45e;
+    font-size: large;
+    font-weight: bold;
+    padding: 2%;
+    border-bottom: 1px dotted #cda45e;
+  }
 }
