@@ -13,23 +13,32 @@ body {
   margin: 4px;
 }
 @media only screen and (max-width: 570px) {
+  .dropdown{
+    display: flex;
+    flex-direction: column;
+  }
   .dropdown-content{
+
     display: none;
-    left:0%;
+    margin-left:10%;
 
   }
+
   .pos{
-    padding-top: 10px;
+    position: absolute;
+    padding-top:5px;
+    right: 10%;
+
 
   }
   .dropdown-content a:hover {background-color: #ddd;}
 
-  .dropdown:active .dropdown-content {
+  .dropdown:hover .dropdown-content {
     display: block;
 
   }
 
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color:white;}
 
 }
 
@@ -58,6 +67,7 @@ body {
   .dropdown{
     display: flex;
     flex-direction: row;
+    width: 100%;
   }
   .pos{
     margin: 4px;
@@ -153,6 +163,7 @@ body {
 .content ul li,
 .content p {
   color: white;
+
 }
 
 .home-form {
@@ -333,6 +344,7 @@ body {
     color: black;
     font-size: 1.4em;
     border:1px solid white;
+    margin-left:
   }
   .collapsible2{
 
@@ -478,6 +490,210 @@ body {
 
   }
 
+}
+.product-title-section p{
+  padding-left: 5%;
+}
+.whole-product-section {
+  padding-top: 0;
+}
+.whole-product {
+  display: flex;
+}
+.product-images {
+  width: 100%;
+}
+
+.main-img-holder {
+  height: 500px;
+  border: 1px solid #cda45e;
+  margin: auto;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.main-img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  box-shadow: 2% 2% 5% #cda45e;
+}
+
+.sub-imgs {
+  display: flex;
+  padding: 2%;
+  margin: auto;
+  margin-top: 2%;
+  align-items: center;
+  border-radius: 10px;
+}
+
+.sub-img-holder {
+  width: 20%;
+  height: 100px;
+  margin-right: 1%;
+  border: 1px dotted #cda45e;
+  text-align: center;
+}
+
+.sub-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.prod-short-desc-div {
+  margin-bottom: 8%;
+}
+
+.product-description {
+  color: black;
+  padding: 0 3% 0% 2%;
+}
+
+.make-it-yours {
+  padding-bottom: 5%;
+  text-align: center;
+  padding-top: 3%;
+}
+
+.prod-checkout-div {
+  border: 2px double #cda45e;
+  padding: 0% 0% 5% 5%;
+}
+
+.prod-sizes {
+  display: flex;
+}
+
+.prod-quantity input[type="number"] {
+  border-radius: 20px;
+  outline: none;
+  border-color: #cda45e;
+  background-color: none;
+  margin-left: 5%;
+  padding: 1% 0% 1% 3%;
+  width: 20%;
+}
+
+.prod-buttons {
+  text-align: center;
+}
+
+.checkout-btn {
+  margin-top: 5%;
+  border: 1px solid #cda45e;
+  width: 50%;
+  text-align: center;
+  border-radius: 50px;
+  padding: 3%;
+}
+
+.checkout-btn:hover {
+  background-color: black;
+  /* transition: ease-in; */
+  color: white;
+}
+
+/* ******  other details   ****** */
+
+.other-details-section {
+  padding-top: 0;
+}
+
+.other-details {
+  color: black;
+  width: 70%;
+  margin: auto;
+}
+
+.detail {
+  margin-bottom: 5%;
+  border: 1px solid #cda45e;
+  border-radius: 5px;
+}
+
+.detail-question {
+  display: flex;
+  color: #cda45e;
+  font-size: larger;
+  font-weight: bolder;
+  padding: 2%;
+  border-bottom: 1px dotted #cda45e;
+}
+
+.detail-answer {
+  padding: 2% 2%;
+}
+
+/* ***************************      MEDIA       *************************** */
+@media(min-width: 540px) {
+  .cat {
+    /* visibility: hidden; */
+    opacity: 0;
+  }
+}
+
+@media only screen and (max-width: 539px) {
+  body {
+    background-color: white;
+  }
+
+  .home-form {
+    width: 95%;
+    margin: auto;
+  }
+
+  .footer-info  {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+
+  .product-card {
+    border-radius: 0px;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    padding-bottom: 5%;
+    border-bottom: 1px solid #cda45e;
+    margin: 2% 5% 2% 5%;
+  }
+
+  .cat {
+    visibility: visible;
+    position: fixed;
+    bottom: 10px;
+    color: red;
+  }
+
+  .products {
+    margin: auto;
+    /* margin-bottom: 20%; */
+  }
+
+  .products-grid {
+    padding-top: 8%;
+
+  }
+
+  .collapsible {
+    position: fixed;
+    bottom: 0;
+    z-index: 900;
+  }
+
+  /* ******************    PRODUCT         ************************* */
+
+  .whole-product {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .other-details {
+    width: 98%;
+  }
 
   .detail-question {
     display: flex;
