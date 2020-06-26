@@ -71,9 +71,22 @@
         <div class="sub-img-holder">
           <img class="sub-img" src="../assets/img/kurtas/kurta1.jpeg" alt="">
         </div>
-
       </div>
     </div>
+
+    <script>
+      console.log('Hey');
+      
+      $('.sub-img-holder').on('click', function(){
+        console.log('Clicked');
+        
+          var src = $(this).children('img').attr('src');  
+          $('.main-img').children('img').attr('src', src);
+      });
+
+    </script>
+
+
     <div class="product-description col-lg-5 col-md-5 col-sm-10">
       <div class="prod-short-desc-div">
        <div class="prod-short-desc">
