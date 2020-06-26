@@ -1,0 +1,291 @@
+/* ***********************************     FOOTER        ******************************************** */
+
+.footer-info  {
+  display: flex;
+  margin: auto;
+  width: 70%;
+}
+
+
+/* ***********************************     DASHBORD        ******************************************** */
+
+.main-user-div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.user-img-div {
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid #cda45e; */
+  text-align: center;
+}
+
+.user-img-holder {
+  height: 300px;
+  width: 70%;
+  padding: 1%;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: 0 auto;
+}
+
+.user-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 50px;
+}
+
+.user-img-form input[type="file"] {
+  color: #cda45e;
+  outline: none;
+  margin-bottom: 3%;
+  border: 1px dotted #cda45e;
+}
+
+.user-img-form input[type="submit"] {
+  color: #cda45e;
+  outline: none;
+  border: none;
+  background-color: black;
+  margin-bottom: 3%;
+}
+
+.user-img-form input[type="submit"]:hover {
+  border: 1px solid #cda45e;
+  color: white;
+  padding: 2%;
+  border-radius: 20px;
+}
+
+.user-cart {
+  margin-bottom: 8%;
+}
+
+.user-detail {
+  display: flex;
+  margin-bottom: 2%;
+}
+
+.font-icon {
+  color: white;
+}
+
+.user-bio-div {
+  width: 80%;
+  margin: 0% auto;
+}
+
+.user-details {
+  width: 80%;
+  margin: auto;
+}
+
+.user-detail {
+  margin-bottom: 2%;
+  border-bottom: 1px dotted white;
+}
+
+.user-detail-label {
+  width: 27%;
+  margin-right: 3%;
+}
+
+.user-detail-info {
+  width: 40%;
+}
+
+.user-detial-change {
+  width: 30%;
+}
+
+.user-password-reset {
+  margin: 5% auto;
+  border: 1px solid #cda45e;
+  width: 80%;
+  border-radius: 20px;
+  text-align: left;
+}
+
+.user-detail-reset h5 {
+  padding-top: 5%;
+}
+
+.detail-reset-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.detail-reset-form input[type="text"] {
+  background-color: transparent;
+  color: #cda45e;
+  padding: 1% 4%;
+  text-align: center;
+  width: 80%;
+  margin: 2%;
+  outline: none;
+  border: none;
+}
+
+.detail-reset-form input[type="submit"] {
+  background-color: transparent;
+  color: #cda45e;
+  padding: 1% 4%;
+  text-align: center;
+  width: 80%;
+  margin: 2% auto 8% auto;
+  outline: none;
+  border: 1px solid #cda45e;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.detail-reset-form input[type="submit"]:hover {
+  background-color: #cda45e;
+  color: white;
+  border: 1px solid white;
+}
+
+.user-password-reset h4 {
+  padding-top: 5%;
+}
+
+.pwd-reset-form {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.pwd-reset-form input[type="password"] {
+  background-color: transparent;
+  color: #cda45e;
+  padding: 1% 4%;
+  text-align: left;
+  width: 80%;
+  margin: 2%;
+  outline: none;
+  border: none;
+}
+
+.pwd-reset-form input[type="submit"] {
+  background-color: transparent;
+  color: #cda45e;
+  padding: 1% 4%;
+  text-align: left;
+  width: 80%;
+  margin: 2% auto 4% auto;
+  outline: none;
+  border: 1px solid #cda45e;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.pwd-reset-form input[type="submit"]:hover {
+  background-color: #cda45e;
+  color: white;
+  border: 1px solid white;
+}
+
+
+
+
+/* ***********************************     CHECKOUT        ******************************************** */
+
+.main-order-div {
+  width: 70%;
+  border: 1px solid #cda45e;
+  margin: auto;
+  padding: 0;
+}
+
+.order {
+  margin: 3% auto;
+  width: 90%;
+}
+
+.order-heading {
+  border: 1px solid white;
+  padding: 1% 3%;
+  font-weight: bold;
+}
+
+.order-body {
+  border: 1px dotted wheat;
+  padding: 1% 3%;
+
+}
+
+.order-detail {
+  display: flex;
+  padding-bottom: 1%;
+}
+
+.order-detail-label {
+  width: 40%;
+}
+
+.order-detail-info a button {
+  outline: none;
+  border: none;
+  color: red;
+  background-color: transparent;
+}
+
+/* ***********************************     MEDIA        ******************************************** */
+
+@media only screen and (max-width: 539px) {
+
+  .footer-info  {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+  }
+
+  .user-dashbord-section {
+    padding-top: 0;
+  }
+
+  .user-img-form input[type="file"] {
+    width: 70%;
+    margin: 5% auto 0% auto;
+  }
+
+  .user-img-div {
+    width: 95%;
+    margin: auto;
+  }
+
+  .user-bio-div {
+    width: 95%;
+    margin: 0% auto;
+  }
+
+  .user-details {
+    width: 97%;
+  }
+
+  .user-password-reset {
+    width: 97%;
+  }
+
+  .user-detail-label {
+    width: 40%;
+  }
+  
+  .user-detail-info {
+    width: 50%;
+  }
+  
+  .user-detial-change {
+    width: 10%;
+  }
+}
+
+
+
+
+
+
