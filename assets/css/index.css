@@ -275,6 +275,7 @@ body {
   border-radius: 10px;
   border: .1px dotted #cda45e;
   margin: 1% 1% 1% 1%;
+  font-size: 2em;
 }
 
 .product-details button{
@@ -284,8 +285,12 @@ body {
   color: white;
   padding: 0 8%;
   margin-bottom: 5%;
+  font-size: 0.7em;
 }
+.product-details h6{
 
+  font-size: 1em;
+}
 .product-details button:hover{
   background-color: #cda45e;
   color: black;
@@ -314,7 +319,7 @@ body {
   display: none;
 }
 
-@media only screen and (max-width: 539px) {
+@media only screen and (max-width: 767px) {
   .btngrp{
     display: flex;
     width: 100%;
@@ -342,7 +347,7 @@ body {
     width: 50%;
     height: 5%;
     color: black;
-    font-size: 1.4em;
+    font-size: 2.2em;
     border:1px solid white;
     /* margin-left: */
   }
@@ -353,9 +358,13 @@ body {
     width: 50%;
     height: 5%;
     color: black;
-    font-size: 1.4em;
+    font-size: 2.2em;
     border:1px solid white;
     margin-left:50%
+  }
+  .filter-label {
+    padding: 3% 0%;
+    font-size: 2em;
   }
 
 }
@@ -372,6 +381,7 @@ body {
 
 .filter-label {
   padding: 3% 0%;
+
 }
 
 .cat-option input[type="number"] {
