@@ -33,6 +33,67 @@
   label{
     font-weight: normal;
   }
+
+
+  input[type="checkbox"]{
+
+    width: 10%;
+  }
+  .dotblack {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: black;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:0.2%;
+    margin-left: 12%;
+    border:1px solid black;
+  }
+  .dotbg {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: #f5f5dc;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:0.2%;
+    margin-left: 11%;
+    border:1px solid black;
+  }
+  .dotwhite {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: white;
+    border-radius: 50%;
+    border:1px solid black;
+    display: inline-block;
+    margin-top:0.2%;
+    margin-left: 10.3%;
+  }
+  .dotred{
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:0.2%;
+    margin-left: 14.2%;
+    border:1px solid black;
+  }
+  .dotgreen {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-top:0.2%;
+    margin-left: 9%;
+    border:1px solid black;
+  }
 </style>
 <body>
 <header id="header" class="fixed-top">
@@ -90,39 +151,41 @@
           <div class="col-lg-3 col-md-4 filter-grid showFiltermob">
             <form action="#">
               <div class="filter-label">
-                <div class="cat-head" style="">Sub-Categories</div>
-                <div class="cat-option">
+
+                <div class="cat-head" >Sub-Categories</div>
+                <div class="cat-option" style=" display:flex;flex-direction: row;margin-top: 3%">
+
                   <input type="checkbox" id="Kurta" name="subCategory" value="Kurta">
-                  <label class="cbox" for="Kurta">Kurta set</label> <br>
+                  <label class="cbox" for="Kurta"> Kurta set</label> <br>
                   <input type="checkbox" id="Sherwani" name="subCategory" value="Sherwani">
-                  <label class="cbox" for="Sherwani">Sherwani</label><br>
+                  <label class="cbox" for="Sherwani"> Sherwani</label><br>
                   <input type="checkbox" id="Sadri" name="subCategory" value="Sadri">
-                  <label class="cbox" for="Sadri">Sadri</label><br>
+                  <label class="cbox" for="Sadri"> Sadri</label><br>
                 </div>
               </div>
 
               <div class="filter-label">
-                <div class="cat-head">Colors</div>
-                <div class="cat-option row">
-                  <div class="col-lg-5 col-md-5 col-sm-5">
+                <div class="cat-head" >Colors</div>
+                <div class="cat-option" style="" >
+                  <div class="col-lg-5 col-md-5 col-sm-5" >
                     <input type="checkbox" id="black" name="colors" value="black">
-                    <label class="cbox" for="black">black</label>
+                    <label class="cbox" for="black">Black <span class="dotblack"></span></label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="beige" name="colors" value="beige">
-                    <label class="cbox" for="beige">beige</label>
+                    <label class="cbox" for="beige">Beige <span class="dotbg"></span></label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="white" name="colors" value="white">
-                    <label class="cbox" for="white">white</label>
+                    <label class="cbox" for="white">White <span class="dotwhite"></span></label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="red" name="colors" value="red">
-                    <label class="cbox" for="red">red</label>
+                    <label class="cbox" for="red">Red <span class="dotred"></span></label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="green" name="colors" value="green">
-                    <label class="cbox" for="green">green</label>
+                    <label class="cbox" for="green">Green <span class="dotgreen"></span></label>
                   </div>
                 </div>
               </div>
@@ -131,27 +194,27 @@
                 <div class="cat-head">Price</div>
                 <div class="cat-option">
                   <p class="price-label">From </p>
-                  <input  type="number" placeholder="6000">
+                  <input  type="number" placeholder="6000" style="color: black">
 
                   <p class="price-label">To</p>
-                  <input type="number" placeholder="40000">
+                  <input type="number" placeholder="40000" style="color: black">
                 </div>
               </div>
 
               <div class="filter-label">
                 <div class="cat-head">Design</div>
-                <div class="cat-option row">
+                <div class="cat-option" style="display:flex;flex-direction: row;margin-top: 3%">
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="pattern" name="design" value="pattern">
-                    <label class="cbox" for="pattern">pattern</label>
+                    <label class="cbox" for="pattern">Pattern</label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="floral " name="design" value="floral ">
-                    <label class="cbox" for="floral ">floral </label>
+                    <label class="cbox" for="floral ">Floral </label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="solid " name="design" value="solid">
-                    <label class="cbox" for="solid">solid</label>
+                    <label class="cbox" for="solid">Solid</label>
                   </div>
                 </div>
               </div>
