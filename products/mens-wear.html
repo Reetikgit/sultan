@@ -29,7 +29,11 @@
   <link rel="stylesheet" href="../assets/css/index.css">
 
 </head>
-
+<style type="text/css">
+  label{
+    font-weight: normal;
+  }
+</style>
 <body>
 <header id="header" class="fixed-top">
   <div class="container d-flex align-items-center">
@@ -80,13 +84,13 @@
         <div class="modal-content">
           <div class="modal-header">
             <h2 class="modal-title" style="color: black">Apply Filters :Mens-Wear</h2>
-            <button type="button" class="close" data-dismiss="modal">&times;</button>
-            <h4 class="modal-title" style="color: black">Close</h4>
+            <button type="button" class="close" data-dismiss="modal" style="font-size: 2.2em;">&times;</button>
+
           </div>
           <div class="col-lg-3 col-md-4 filter-grid showFiltermob">
             <form action="#">
               <div class="filter-label">
-                <div class="cat-head">Sub-Categories</div>
+                <div class="cat-head" style="">Sub-Categories</div>
                 <div class="cat-option">
                   <input type="checkbox" id="Kurta" name="subCategory" value="Kurta">
                   <label class="cbox" for="Kurta">Kurta set</label> <br>
@@ -201,8 +205,11 @@
 
             </form>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <div class="modal-footer" style="margin-bottom: 1%;">
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="position:relative; background-color: green;color:white;left:0%;font-size: 1.8em;width: 40%;margin-right: 1%">Apply</button>
+
+            <button type="button" class="btn btn-default" data-dismiss="modal" style="
+              position:relative; ;background-color:#cda45e;font-size: 1.8em;width: 40%;margin-right:8%;">Close</button>
           </div>
         </div>
 
