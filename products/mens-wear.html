@@ -29,12 +29,17 @@
   <link rel="stylesheet" href="../assets/css/index.css">
 
 </head>
+<style type="text/css">
 
+</style>
 <body>
-<header id="header" class="fixed-top">
+<header id="header" class="fixed-top" style="top:0">
   <div class="container d-flex align-items-center">
+
     <h1 class="logo mr-auto"><a href="#"><img class="nav-logo" src="../assets/img/home/nav-logo.png"></a></h1>
+    <i class="carticon pos fa fa-cart-plus"><asp:Label ID="lblCartCount" runat="server" CssClass="badge badge-warning"  ForeColor="White"/>0</i>
     <nav class="nav-menu d-none d-lg-block" style="font-size: 1.8em;">
+
       <ul>
         <li ><a href="../home/index.html">Home</a></li>
         <li><a href="#">About Us</a></li>
@@ -44,6 +49,7 @@
         <li><a href="#gallery">Accessories</a></li>
         <li class="book-a-table text-center"><a href="#">Login</a></li>
       </ul>
+
     </nav>
   </div>
 </header>
@@ -86,10 +92,8 @@
           <div class="col-lg-3 col-md-4 filter-grid showFiltermob">
             <form action="#">
               <div class="filter-label">
-
                 <div class="cat-head" >Sub-Categories</div>
-                <div class="cat-option" style=" display:flex;flex-direction: row;margin-top: 3%">
-
+                <div class="cat-option" >
                   <input type="checkbox" id="Kurta" name="subCategory" value="Kurta">
                   <label class="cbox" for="Kurta"> Kurta set</label> <br>
                   <input type="checkbox" id="Sherwani" name="subCategory" value="Sherwani">
@@ -100,27 +104,27 @@
               </div>
 
               <div class="filter-label">
-                <div class="cat-head" >Colors</div>
-                <div class="cat-option" >
+                <div class="cat-head" style="display: flex;">Colors</div>
+                <div class="cat-option row" >
                   <div class="col-lg-5 col-md-5 col-sm-5" >
                     <input type="checkbox" id="black" name="colors" value="black">
-                    <label class="cbox" for="black">Black <span class="dotblack"></span></label>
+                    <label class="cbox" for="black">Black</span></label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="beige" name="colors" value="beige">
-                    <label class="cbox" for="beige">Beige <span class="dotbg"></span></label>
+                    <label class="cbox" for="beige">Beige</label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="white" name="colors" value="white">
-                    <label class="cbox" for="white">White <span class="dotwhite"></span></label>
+                    <label class="cbox" for="white">White</label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="red" name="colors" value="red">
-                    <label class="cbox" for="red">Red <span class="dotred"></span></label>
+                    <label class="cbox" for="red">Red</label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="green" name="colors" value="green">
-                    <label class="cbox" for="green">Green <span class="dotgreen"></span></label>
+                    <label class="cbox" for="green">Green</label>
                   </div>
                 </div>
               </div>
@@ -138,18 +142,18 @@
 
               <div class="filter-label">
                 <div class="cat-head">Design</div>
-                <div class="cat-option" style="display:flex;flex-direction: row;margin-top: 3%">
+                <div class="cat-option row">
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="pattern" name="design" value="pattern">
-                    <label class="cbox" for="pattern">Pattern</label>
+                    <label class="cbox" for="pattern">pattern</label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="floral " name="design" value="floral ">
-                    <label class="cbox" for="floral ">Floral </label>
+                    <label class="cbox" for="floral ">floral </label>
                   </div>
                   <div class="col-lg-5 col-md-5 col-sm-5">
                     <input type="checkbox" id="solid " name="design" value="solid">
-                    <label class="cbox" for="solid">Solid</label>
+                    <label class="cbox" for="solid">solid</label>
                   </div>
                 </div>
               </div>

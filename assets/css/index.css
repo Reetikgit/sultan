@@ -418,6 +418,34 @@ body {
 }
 
 
+.filter-grid input[type="checkbox"] {
+  width: 10%;
+}
+
+.carticon{
+  position:relative;
+  font-size: 3em;
+  margin-right:7%;
+  top:-10px;
+  color:#cda45e;
+
+}
+@media only screen and (min-width:1000px) {
+
+  .carticon{
+    display:none;
+  }
+}
+#lblCartCount {
+    font-size: 12px;
+    background-color: green;
+    border-radius: 10px;
+    color: #fff;
+    padding: 0 5px;
+    vertical-align: top;
+}
+
+
 /* ****************************     PRODUCT     ******************************* */
 
 .whole-product {
