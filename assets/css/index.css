@@ -1,5 +1,3 @@
-
-
 body {
   margin: 0;
   padding: 0;
@@ -427,7 +425,6 @@ body {
 
 .sub-imgs {
   display: flex;
-  text-align: center;
 }
 
 .product-images {
@@ -516,7 +513,7 @@ body {
 
 .product-description {
   color: black;
-  padding: 0 0% 0% 2%;
+  padding: 0 3% 0% 2%;
 }
 
 .make-it-yours {
@@ -695,3 +692,4 @@ body {
   }
 
 }
+
