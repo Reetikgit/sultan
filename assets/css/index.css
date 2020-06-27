@@ -413,6 +413,9 @@ body {
   margin: 0;
 }
 
+.filter-grid label {
+  font-weight: normal;
+}
 
 
 /* ****************************     PRODUCT     ******************************* */
