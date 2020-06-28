@@ -94,12 +94,13 @@ body {
   color: red;
   background: linear-gradient(to left top, transparent 47.75%, currentColor 49.5%, currentColor 50.5%, transparent 52.25%);
   margin-bottom: 2%;
-
+  font-size: 0.8em;
 }
 
 .new-price {
   color: green;
   font-weight: 900;
+  font-size: 0.8em;
 }
 
 .img-holder {
