@@ -722,5 +722,65 @@ body {
     flex-wrap: wrap;
   }
 
+  * auth */
+
+  .signin {
+    border-right: none;
+    border-bottom: 1px solid #cda45e;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+  }
+
+  .signin-main-div {
+    width: 90%;
+  }
+}
+
+
+
+/* ****************************      AUTH            ****************************** */
+
+.auth {
+  display: flex;
+  color: black;
+  flex-wrap: wrap;
+}
+
+.signin {
+  border-right: 2px solid #cda45e;
+}
+
+.signin-main-div {
+  width: 60%;
+  margin: auto;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"],
+.login-form input[type="number"] {
+  border-color: #cda45e;
+}
+
+.login-form input[type="text"]:focus,
+.login-form input[type="password"]:focus,
+.login-form input[type="number"]:focus {
+  outline: none;
+  box-shadow: 2px 2px 2px #cda45e
+}
+
+.login-form button[type="submit"] {
+  width: 80%;
+  outline: none;
+  color: #cda45e;
+  border: none;
+  border-color: #cda45e;
+  padding: 1%;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.login-form button[type="submit"]:hover {
+  box-shadow: 4px 4px 4px #cda45e;
+  border-radius: 20px;
 }
 
