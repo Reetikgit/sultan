@@ -125,7 +125,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 52em) {
+@media only screen and (min-width: 64em) {
   #menu .main-menu {
     display: block;
     width: 100%;
@@ -190,7 +190,7 @@ body {
 
   }
   header .container{
-
+    background-color:#1a1814;
   }
 
   #menu li {
