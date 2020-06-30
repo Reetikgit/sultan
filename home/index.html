@@ -25,6 +25,7 @@
   <link href="../assets/vendor/venobox/venobox.css" rel="stylesheet">
   <link href="../assets/vendor/aos/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 
   <!-- Template Main CSS File -->
   <link href="../assets/css/style.css" rel="stylesheet">
@@ -51,7 +52,7 @@
 
       <h1 id="logodisp" class="logo mr-auto"><a href="#"><img class="nav-logo" src="../assets/img/home/nav-logo.png"></a></h1>
 
-        <nav id="menu">
+        <nav id="menu" >
           <label for="tm" id="toggle-menu"><i onclick="showme()" id="open" class="fa fa-bars"></i> <i onclick="showme()" id="close" class="fa fa-times" style="display: none;"></i></label>
 
           <input type="checkbox" id="tm">
@@ -60,14 +61,14 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="#">About Us</a></li>
 
-            <li><a href="#">Shop
+            <li ><a >Shop
                 <span class="drop-icon">▾</span>
                 <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
               </a>
               <input type="checkbox" id="sm1">
               <ul class="sub-menu">
 
-                <li><a href="#">Mens Wear
+                <li class="w3-animate-zoom"  ><a href="#">Mens Wear
                     <span class="drop-icon">▾</span>
                     <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
                   </a>
@@ -81,7 +82,7 @@
                     <li><a href="#">Kurta-Sadri Set</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Kids Wear
+                <li class="w3-animate-zoom"><a href="#">Kids Wear
                     <span class="drop-icon">▾</span>
                     <label title="Toggle Drop-down" class="drop-icon" for="sm3">▾</label>
                   </a>
@@ -95,7 +96,7 @@
                     <li><a href="#">Baap Beta Collection</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Accessories
+                <li class="w3-animate-zoom"><a href="#">Accessories
                     <span class="drop-icon">▾</span>
                     <label title="Toggle Drop-down" class="drop-icon" for="sm4">▾</label>
                   </a>
@@ -106,7 +107,7 @@
                     <li><a href="#">Nagra</a></li>
                   </ul>
                 </li>
-                <li><a href="#">Lower
+                <li class="w3-animate-zoom"><a href="#">Lower
                     <span class="drop-icon">▾</span>
                     <label title="Toggle Drop-down" class="drop-icon" for="sm5">▾</label>
                   </a>
@@ -126,7 +127,15 @@
             <li><a href="#">Latest collection</a></li>
             <li><a href="#">Top Products</a></li>
             <li><a href="#">Contact us</a></li>
-            <li class="book-a-table text-center"><a href="./signin-singup.html">Login</a></li>
+
+            <li ><a href="./signin-singup.html">Account
+                <span class="drop-icon">▾</span>
+                <label title="Toggle Drop-down" class="drop-icon" for="sm7">▾</label>
+              </a>
+              <input type="checkbox" id="sm7">
+              <ul class="sub-menu">
+                <li class="w3-animate-zoom"><a href="#">Login</a>
+                <li class="w3-animate-zoom"><a href="#">Signup</a>
           </ul>
         </nav>
     </div>
@@ -244,6 +253,7 @@
             </ul>
           </div>
         </div>
+
 
         <div class="row container details-card grid-main" data-aos="fade-up" data-aos-delay="150">
           <div class="grid col-lg-3 col-md-5 col-sm-11 text-center">
