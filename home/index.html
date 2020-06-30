@@ -49,57 +49,86 @@
   <header id="header" class="fixed-top">
     <div class="container d-flex align-items-center">
 
-      <h1 class="logo mr-auto"><a href="#"><img class="nav-logo" src="../assets/img/home/nav-logo.png"></a></h1>
-      <nav class="nav-menu d-none d-lg-block">
-        <ul>
-          <li><a href="../admin/admin-home.html">Admin</a></li>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="./about-us.html">About Us</a></li>
-          <li class="dropdown"><a  href="../products/mens-wear.html">Mens's Wear</a>
-            <i class=" pos fa fa-caret-down"></i>
-            <div class="dropdown-content">
-              <a href="#">Kurta Set</a>
-              <a href="#">Sherwani Set</a>
-              <a href="#">Indo Western</a>
-              <a href="#">Sadri</a>
-              <a href="#">Kurta</a>
-              <a href="#">Kurta-Sadri Set</a>
-            </div>
-          </li>
-          <li class="dropdown"><a  href="#events">Kids's Wear</a>
-            <i class=" pos fa fa-caret-down"></i>
-            <div class="dropdown-content">
-              <a href="#">Contton Kurta</a>
-              <a href="#">Party Wear</a>
-              <a href="#">Sherwani</a>
-              <a href="#">Nehru Jacket</a>
-              <a href="#">Sadri Kurta Set</a>
-              <a href="#">Baap Beta Collection</a>
-            </div>
-          </li>
-          <li class="dropdown"><a  href="#events">Accessories</a>
-            <i class=" pos fa fa-caret-down"></i>
-            <div class="dropdown-content">
-              <a href="#">Mala</a>
-              <a href="#">Brooch</a>
-              <a href="#">Nagra</a>
-            </div>
-          </li>
-          <li class="dropdown"><a  href="#events">Lower</a>
-            <i class=" pos fa fa-caret-down"></i>
-            <div class="dropdown-content">
-              <a href="#">Churidar</a>
-              <a href="#">Salwar</a>
-              <a href="#">Aligarh</a>
-              <a href="#">Dhoti</a>
-              <a href="#">Patiyala</a>
-              <a href="#">Polo Pants</a>
-            </div>
-          </li>
-          <li class="book-a-table text-center"><a href="./signin-singup.html">Login</a></li>
-        </ul>
-      </nav><!-- .nav-menu -->
+      <h1 id="logodisp" class="logo mr-auto"><a href="#"><img class="nav-logo" src="../assets/img/home/nav-logo.png"></a></h1>
 
+        <nav id="menu">
+          <label for="tm" id="toggle-menu"><i onclick="showme()" id="open" class="fa fa-bars"></i> <i onclick="showme()" id="close" class="fa fa-times" style="display: none;"></i></label>
+
+          <input type="checkbox" id="tm">
+          <ul class="main-menu clearfix">
+            <li><a href="../admin/admin-home.html">Admin</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About Us</a></li>
+
+            <li><a href="#">Shop
+                <span class="drop-icon">▾</span>
+                <label title="Toggle Drop-down" class="drop-icon" for="sm1">▾</label>
+              </a>
+              <input type="checkbox" id="sm1">
+              <ul class="sub-menu">
+
+                <li><a href="#">Mens Wear
+                    <span class="drop-icon">▾</span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm2">▾</label>
+                  </a>
+                  <input type="checkbox" id="sm2">
+                  <ul class="sub-menu">
+                    <li><a href="#">Kurta Set</a></li>
+                    <li><a href="#">Sherwani Set</a></li>
+                    <li><a href="#">Indo Western</a></li>
+                    <li><a href="#">Sadri</a></li>
+                    <li><a href="#">Kurta</a></li>
+                    <li><a href="#">Kurta-Sadri Set</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Kids Wear
+                    <span class="drop-icon">▾</span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm3">▾</label>
+                  </a>
+                  <input type="checkbox" id="sm3">
+                  <ul class="sub-menu">
+                    <li><a href="#">Contton Kurta</a></li>
+                    <li><a href="#">Party Wear</a></li>
+                    <li><a href="#">Sherwani</a></li>
+                    <li><a href="#">Nehru Jacket</a></li>
+                    <li><a href="#">Sadri Kurta Set</a></li>
+                    <li><a href="#">Baap Beta Collection</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Accessories
+                    <span class="drop-icon">▾</span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm4">▾</label>
+                  </a>
+                  <input type="checkbox" id="sm4">
+                  <ul class="sub-menu">
+                    <li><a href="#">Mala</a></li>
+                    <li><a href="#">Brooch</a></li>
+                    <li><a href="#">Nagra</a></li>
+                  </ul>
+                </li>
+                <li><a href="#">Lower
+                    <span class="drop-icon">▾</span>
+                    <label title="Toggle Drop-down" class="drop-icon" for="sm5">▾</label>
+                  </a>
+                  <input type="checkbox" id="sm5">
+                  <ul class="sub-menu">
+                    <li><a href="#">Churidar</a></li>
+                    <li><a href="#">Salwar</a></li>
+                    <li><a href="#">Aligarh</a></li>
+                    <li><a href="#">Dhoti</a></li>
+                    <li><a href="#">Patiyala</a></li>
+                    <li><a href="#">Polo Pants</a></li>
+                  </ul>
+                </li>
+
+              </ul>
+            </li>
+            <li><a href="#">Latest collection</a></li>
+            <li><a href="#">Top Products</a></li>
+            <li><a href="#">Contact us</a></li>
+            <li class="book-a-table text-center"><a href="./signin-singup.html">Login</a></li>
+          </ul>
+        </nav>
     </div>
   </header><!-- End Header -->
 
@@ -518,6 +547,26 @@
   <script src="../assets/vendor/aos/aos.js"></script>
   <!-- Template Main JS File -->
   <script src="../assets/js/main.js"></script>
+  <script type="text/javascript">
+    var i=0;
+    function showme(){
+      i++;
+
+    if(i%2==0){
+
+      document.getElementById("open").style.display="block";
+      document.getElementById("close").style.display="none";
+      document.getElementById("logodisp").style.display="block";
+    }
+    else{
+      document.getElementById("open").style.display="none";
+      document.getElementById("close").style.display="block";
+      document.getElementById("logodisp").style.display="none";
+    }
+
+    }
+
+  </script>
 
 </body>
 
